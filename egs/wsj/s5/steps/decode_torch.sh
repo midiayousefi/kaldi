@@ -10,7 +10,7 @@ stage=0 # stage=1 skips lattice generation
 nj=4
 cmd=run.pl
 
-acwt=0.10 # note: only really affects pruning (scoring is on lattices).
+acwt=0.10    #note1: 1/int int=[10:23]# note: only really affects pruning (scoring is on lattices).
 beam=13.0
 lattice_beam=8.0
 min_active=200
@@ -56,7 +56,7 @@ thread_string=
 
 left_context=10
 right_context=10
-device='cpu'
+device='cuda:7'
 
 model=$(dirname $graphdir)/final.mdl
 
